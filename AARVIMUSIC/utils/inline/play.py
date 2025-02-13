@@ -79,6 +79,34 @@ def stream_markup_timer(_, chat_id, played, dur):
     ]
     return buttons
 
+def stream_markup(_, chat_id):
+    buttons = [
+        [
+            InlineKeyboardButton(
+                text=f"{played} {bar} {dur}",
+                callback_data="GetTimer",
+            )
+        ],
+        [
+            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+        ],
+        [
+            InlineKeyboardButton(
+                text="˹ ✰ 𝖡ᴧ፝֠֩ʙꭎ ✰ ˼", url=f"https://t.me/VENOM_PRATAP"
+            ),
+            InlineKeyboardButton(
+                text="˹ ✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰ ˼", url=f"https://t.me/Venom_p_queen"
+            ),
+        ],
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+    ]
+    return buttons
+    
+
 
 def playlist_markup(_, videoid, user_id, ptype, channel, fplay):
     buttons = [
