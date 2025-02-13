@@ -1,5 +1,5 @@
 import math
-from config import SUPPORT_CHAT, OWNER_USERNAME
+
 from pyrogram.types import InlineKeyboardButton
 from AARVIMUSIC import app
 import config
