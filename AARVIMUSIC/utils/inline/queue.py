@@ -1,6 +1,6 @@
 from typing import Union
-from AARVIMUSICMUSIC import app
-from AARVIMUSICMUSIC.utils.formatters import time_to_seconds
+from AARVIMUSIC import app
+from AARVIMUSIC.utils.formatters import time_to_seconds
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
@@ -105,7 +105,7 @@ def queuemarkup(_, vidid, chat_id):
         [
             InlineKeyboardButton(
                 text="๏ ᴍᴏʀᴇ ๏",
-                url="https://t.me/Rocky_dtm",
+                url="https://t.me/Venom_p_queen",
             ),
         ],
     ]
