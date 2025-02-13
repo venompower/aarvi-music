@@ -47,7 +47,7 @@ async def init():
     await AARVI.decorators()
     await restart_bots()
     LOGGER("AARVIMUSIC").info(
-        "╔═════ஜ۩۞۩ஜ════╗\n  ☠︎︎𝗠𝗔𝗗𝗘 𝗕𝗬 𝗠𝗼𝗼𝗻𝗟𝗶𝗴𝗵𝘁☠︎︎\n╚═════ஜ۩۞۩ஜ════╝"
+        "╔═════ஜ۩۞۩ஜ════╗\n  ☠︎︎𝗠𝗔𝗗𝗘 𝗕𝗬 𝗔𝗔𝗥𝗩𝗜☠︎︎\n╚═════ஜ۩۞۩ஜ════╝"
     )
     await idle()
     await app.stop()
