@@ -73,7 +73,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             ),
             InlineKeyboardButton(
                 text="˹ ✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰ ˼", url=f"https://t.me/Venom_p_queen"
-            ),
+            )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
@@ -94,7 +94,7 @@ def stream_markup(_, chat_id):
             ),
             InlineKeyboardButton(
                 text="˹ ✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰ ˼", url=f"https://t.me/Venom_p_queen"
-            ),
+            )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
@@ -249,7 +249,7 @@ def stream_markup2(_, chat_id):
             ),
             InlineKeyboardButton(
                 text="˹ ✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰ ˼", url=f"https://t.me/Venom_p_queen"
-            ),
+            )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
@@ -538,7 +538,7 @@ def panel_markup_clone(_, vidid, chat_id):
             ),
             InlineKeyboardButton(
                 text="˹ ✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰ ˼", url=f"https://t.me/Venom_p_queen"
-            ),
+            )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
