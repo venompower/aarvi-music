@@ -496,7 +496,7 @@ def stream_markup_timer(_, chat_id, played, dur):
 
 
 def panel_markup_clone(_, vidid, chat_id):
-    buttons = [        
+    buttons = [
         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
@@ -510,5 +510,5 @@ def panel_markup_clone(_, vidid, chat_id):
                 callback_data="GetTimer",
             )
         ],
+    ]
     return buttons
-
