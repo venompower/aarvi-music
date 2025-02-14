@@ -86,7 +86,21 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
         return await CallbackQuery.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(buttons)
         )
-
+        
+@app.on_callback_query(filters.regex("^bot_info_data$"))
+async def show_bot_info(c: app, q: CallbackQuery):
+    start = time()
+    x = await c.send_message(q.message.chat.id, "Pinging..")
+    delta_ping = time() - start
+    await x.delete()
+    txt = f"""
+    🏓 Pɪɴɢ: {delta_ping * 1000:.3f} ms   
+    🐍 Pʏᴛʜᴏɴ Vᴇʀsɪᴏɴ: 3.10.4
+    🔥 Pʏʀᴏɢʀᴀᴍ Vᴇʀsɪᴏɴ: {pver}
+    """
+    await q.answer(txt, show_alert=True)
+    return
+    
 
 @app.on_callback_query(
     filters.regex(
