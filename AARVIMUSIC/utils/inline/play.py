@@ -248,7 +248,7 @@ def stream_markup2(_, chat_id):
                 text="˹ ❍ᴡηєꝛ ˼", url=f"https://t.me/Venom_p_queen"
             ),
             InlineKeyboardButton(
-                text=˹ 𝐒υᴘᴘσꝛᴛ ˼", url=f"https://t.me/venompratapchat"
+                text="˹ 𝐒υᴘᴘσꝛᴛ ˼", url=f"https://t.me/venompratapchat"
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
