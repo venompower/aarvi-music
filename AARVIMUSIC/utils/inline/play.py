@@ -54,12 +54,7 @@ def stream_markup_timer(_, chat_id, played, dur):
     else:
         bar = "━━━━━━━━━⚪"
     buttons = [
-        [
-            InlineKeyboardButton(
-                text=f"{played} {bar} {dur}",
-                callback_data="GetTimer",
-            )
-        ],
+        
         [
             InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
             InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
@@ -69,13 +64,12 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="˹ ❍ᴡηєꝛ ˼", url=f"https://t.me/Venom_p_queen"
-            ),
-            InlineKeyboardButton(
-                text="˹ 𝐒υᴘᴘσꝛᴛ ˼ ", url=f"https://t.me/venompratapchat"
-            ),
+                text=f"{played} {bar} {dur}",
+                callback_data="GetTimer",
+            )
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+
+         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
 
@@ -89,6 +83,7 @@ def stream_markup(_, chat_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
          ],
+        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
     return buttons
 
@@ -234,7 +229,7 @@ def stream_markup2(_, chat_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [
+[
             InlineKeyboardButton(
                 text="˹ ❍ᴡηєꝛ ˼", url=f"https://t.me/Venom_p_queen"
             ),
@@ -242,7 +237,10 @@ def stream_markup2(_, chat_id):
                 text="˹ 𝐒υᴘᴘσꝛᴛ ˼ ", url=f"https://t.me/venompratapchat"
             ),
         ],
-        [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
+
+        [
+            InlineKeyboardButton(text=_["CLOSEMENU_BUTTON"], callback_data="close"),
+        ],
     ]
     return buttons
 
@@ -471,6 +469,7 @@ def stream_markup_timer(_, chat_id, played, dur):
         bar = "━━━━━━━━⚪─"
     else:
         bar = "━━━━━━━━━⚪"
+
     buttons = [
         [
             InlineKeyboardButton(
@@ -524,14 +523,7 @@ def panel_markup_clone(_, vidid, chat_id):
             InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
             InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
         ],
-        [
-            InlineKeyboardButton(
-                text="˹ ❍ᴡηєꝛ ˼", url=f"https://t.me/Venom_p_queen"
-            ),
-            InlineKeyboardButton(
-                text="˹ 𝐒υᴘᴘσꝛᴛ ˼ ", url=f"https://t.me/venompratapchat"
-            ),
-        ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
     ]
+
     return buttons
