@@ -1,9 +1,9 @@
 import math
 from config import SUPPORT_CHAT, OWNER_USERNAME
 from pyrogram.types import InlineKeyboardButton
-from PROMUSIC import app
+from AARVIMUSIC import app
 import config
-from PROMUSIC.utils.formatters import time_to_seconds
+from AARVIMUSIC.utils.formatters import time_to_seconds
 
 
 def track_markup(_, videoid, user_id, channel, fplay):
