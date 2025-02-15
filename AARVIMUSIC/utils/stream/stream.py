@@ -81,7 +81,7 @@ async def stream(
     if not result:
         return
     if forceplay:
-        await BABY.force_stop_stream(chat_id)
+        await AARVI.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['play_19']}\n\n"
         count = 0
@@ -129,7 +129,7 @@ async def stream(
                 except:
 
                     await mystic.edit_text(_["play_3"])
-                await BABY.join_call(
+                await AARVI.join_call(
                     chat_id,
                     original_chat_id,
                     file_path,
@@ -221,7 +221,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await BABY.join_call(
+            await AARVI.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -282,7 +282,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await BABY.join_call(chat_id, original_chat_id, file_path, video=None)
+            await AARVI.join_call(chat_id, original_chat_id, file_path, video=None)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -334,7 +334,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await BABY.join_call(chat_id, original_chat_id, file_path, video=status)
+            await AARVI.join_call(chat_id, original_chat_id, file_path, video=status)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -390,7 +390,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await BABY.join_call(
+            await AARVI.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -448,7 +448,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await BABY.join_call(
+            await AARVI.join_call(
                 chat_id,
                 original_chat_id,
                 link,
