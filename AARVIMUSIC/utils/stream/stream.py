@@ -60,7 +60,7 @@ from AARVIMUSIC.utils.inline import (
     stream_markup2,
     panel_markup_4,
 )
-from AARVIMUSIC.utils.pastebin import PROBin
+from AARVIMUSIC.utils.pastebin import AARVIBin
 from AARVIMUSIC.utils.stream.queue import put_queue, put_queue_index
 from youtubesearchpython.__future__ import VideosSearch
 
