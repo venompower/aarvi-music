@@ -1,5 +1,5 @@
 import math
-from config import SUPPORT_CHAT, OWNER_USERNAME
+
 from pyrogram.types import InlineKeyboardButton
 from AARVIMUSIC import app
 import config
@@ -69,10 +69,10 @@ def stream_markup_timer(_, chat_id, played, dur):
         ],
         [
             InlineKeyboardButton(
-                text="˹ ❍ᴡηєꝛ ˼", url=f"https://t.me/Venom_p_queen"
+                text="˹ ✰ 𝖡ᴧ፝֠֩ʙꭎ ✰ ˼", url=f"https://t.me/VENOM_PRATAP"
             ),
             InlineKeyboardButton(
-                text="˹ 𝐒υᴘᴘσꝛᴛ ˼ ", url=f"https://t.me/venompratapchat"
+                text="˹ ✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰ ˼", url=f"https://t.me/Venom_p_queen"
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -90,10 +90,10 @@ def stream_markup(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="˹ ❍ᴡηєꝛ ˼", url=f"https://t.me/Venom_p_queen"
+                text="˹ ✰ 𝖡ᴧ፝֠֩ʙꭎ ✰ ˼", url=f"https://t.me/VENOM_PRATAP"
             ),
             InlineKeyboardButton(
-                text="˹ 𝐒υᴘᴘσꝛᴛ ˼", url=f"https://t.me/venompratapchat"
+                text="˹ ✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰ ˼", url=f"https://t.me/Venom_p_queen"
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -245,10 +245,10 @@ def stream_markup2(_, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="˹ ❍ᴡηєꝛ ˼", url=f"https://t.me/Venom_p_queen"
+                text="˹ ✰ 𝖡ᴧ፝֠֩ʙꭎ ✰ ˼", url=f"https://t.me/VENOM_PRATAP"
             ),
             InlineKeyboardButton(
-                text="˹ 𝐒υᴘᴘσꝛᴛ ˼", url=f"https://t.me/venompratapchat"
+                text="˹ ✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰ ˼", url=f"https://t.me/Venom_p_queen"
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -534,10 +534,10 @@ def panel_markup_clone(_, vidid, chat_id):
         ],
         [
             InlineKeyboardButton(
-                text="˹ ❍ᴡηєꝛ ˼", url=f"https://t.me/Venom_p_queen"
+                text="˹ ✰ 𝖡ᴧ፝֠֩ʙꭎ ✰ ˼", url=f"https://t.me/VENOM_PRATAP"
             ),
             InlineKeyboardButton(
-                text="˹ 𝐒υᴘᴘσꝛᴛ ˼", url=f"https://t.me/venompratapchat"
+                text="˹ ✰ 𝛅ᴏ፝֠֩𝛈ᴧ ✰ ˼", url=f"https://t.me/Venom_p_queen"
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
