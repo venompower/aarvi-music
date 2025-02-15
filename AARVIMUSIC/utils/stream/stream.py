@@ -10,7 +10,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 from AARVIMUSIC.utils.database import get_assistant
 import config
 from AARVIMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from AARVIMUSIC.core.call import BABY
+from AARVIMUSIC.core.call import AARVI
 from AARVIMUSIC.misc import SUDOERS
 from AARVIMUSIC.utils import seconds_to_min, time_to_seconds
 from AARVIMUSIC.utils.channelplay import get_channeplayCB
