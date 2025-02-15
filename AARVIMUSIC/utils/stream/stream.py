@@ -49,7 +49,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from AARVIMUSIC import Carbon, YouTube, app
-from AARVIMUSIC.core.call import BABY
+from AARVIMUSIC.core.call import AARVI
 from AARVIMUSIC.misc import db
 from AARVIMUSIC.utils.database import add_active_video_chat, is_active_chat
 from AARVIMUSIC.utils.exceptions import AssistantErr
